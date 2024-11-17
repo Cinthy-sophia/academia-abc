@@ -27,24 +27,12 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/assets/css/styles.css"
             ],
             "scripts": []
           },
           "configurations": {
             "production": {
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "2kB",
-                  "maximumError": "4kB"
-                }
-              ],
               "outputHashing": "all"
             },
             "development": {
@@ -86,14 +74,18 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css"
+              "src/assets/css/styles.css"
             ],
             "scripts": [
-            "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+            "src/assets/js/scripts.js"
             ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "35e1d7ae-e245-46d2-b0c3-f152b9a9dc7c"
   }
 }
